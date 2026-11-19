@@ -1,0 +1,216 @@
+
+
+
+.head__buttons a {
+    position: relative;
+    overflow: hidden;
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        filter 0.25s ease;
+}
+
+.head__buttons a:hover {
+    transform: translateY(-4px);
+    filter: brightness(1.07);
+}
+.head__buttons a:active {
+    transform: translateY(-1px);
+}
+.head__buttons a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 120%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,0.35),
+        transparent
+    );
+    transition: left 0.5s ease;
+}
+
+.head__buttons a:hover::after {
+    left: 120%;
+}
+
+.head__img img {
+    transition: transform 0.5s ease;
+}
+
+.head__img:hover img {
+    transform: scale(1.05);
+}
+
+
+@media (hover: none) {
+    .prefers__items:hover,
+    .head__buttons a:hover,
+    .head__list li:hover {
+        transform: none;
+        box-shadow: none;
+    }
+}
+
+
+/* SERVICES */
+
+
+.services__card-main {
+    position: relative;
+    overflow: hidden;
+    transition:
+        all 0.2s ease;
+}
+.services__card-main:hover {
+    transform: translateY(-6px);
+}
+
+.services__card-main:hover::before {
+    opacity: 1;
+}
+
+.services__card-main-image img {
+    transition: transform 0.5s ease;
+}
+
+.services__card-main:hover .services__card-main-image img {
+    transform: scale(1.07);
+}
+.services__card-main-title {
+    transition: color 0.3s ease;
+}
+
+.services__card-main:hover .services__card-main-title {
+    color: var(--acent-color);
+}
+.services__card-main-btn.done {
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.services__card-main:hover .services__card-main-btn.done {
+    transform: translateY(-2px);
+}
+.services__card-main-btn.done:hover{
+    transform: translateY(0) !important;
+}
+.services__card-main-btn.more {
+    transition: gap 0.25s ease;
+}
+
+.services__card-main-btn.more svg {
+    transition: transform 0.25s ease;
+}
+
+.services__card-main-btn.more:hover {
+    gap: 14px;
+}
+
+.services__card-main-btn.more:hover svg {
+    transform: translateX(4px);
+}
+.services__second-card {
+    transition: all 0.2s linear;
+}
+
+  
+  /* Эффект при наведении */
+  .services__second-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    transition: all 0.3s ease;
+  }
+
+
+
+  
+  /* Наведение на карточки специалистов */
+  .why__card:hover {
+    transform: translateY(-5px) scale(1.02);
+    transition: all 0.3s ease;
+  }
+@media (hover: none) {
+    .services__card-main:hover,
+    .services__second-card:hover {
+        transform: none;
+        box-shadow: none;
+    }
+}
+
+
+.why__form-btn {
+    transition: all 0.3s ease;
+    border: 1px solid #fff;
+  }
+  
+  .why__form-btn:hover {
+    background-color: var(--acent-color);
+    border: 1px solid #fff;
+    color: var(--white);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(37, 171, 255, 0.4);
+  }
+
+
+  .why__form-input input {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 14px;
+    border-radius: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  .why__form-input input:hover,
+  .why__form-input input:focus {
+    border-color: #25ABFF;
+    box-shadow: 0 4px 12px rgba(37, 171, 255, 0.3);
+    transform: translateY(-2px);
+  }
+  .why__form-input p {
+    transition: color 0.3s ease;
+  }
+  
+  .why__form-input input:focus + p {
+    color: #25ABFF;
+  }
+
+
+  .order__btn,
+.order__consult-btn {
+  transition: all 0.3s ease;
+}
+
+.order__btn:hover,
+.order__consult-btn:hover {
+  transform: translateY(-3px);
+}
+
+.order__btn,
+.order__consult-btn {
+  transition: all 0.3s ease;
+}
+
+.order__btn:hover,
+.order__consult-btn:hover {
+  transform: translateY(-3px);
+}
+.order__select {
+    transition: all 0.3s ease;
+  }
+  
+  .order__select:hover,
+  .order__select:focus {
+    transform: translateY(-2px);
+  }
+  .order__consult-messanger a {
+  transition: all 0.3s ease;
+}
+
+.order__consult-messanger a:hover {
+  transform: translateY(-2px);
+}
